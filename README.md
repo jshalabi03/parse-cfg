@@ -1,7 +1,7 @@
 # Parse CFG
 ## About
 * Generates control-flow graph from C++ source file
-* Emits x86 Intel ASM with `clang 15.0.0`
+* Emits x86 Intel ASM with `ARMv8 clang 15.0.0`
 * Docker image fetches required dependencies and ensures standardized output
 * Uses Graphviz to generate PNG visualization of control-flow graph
 
