@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CFG_H
+#define CFG_H
 
 #include <vector>
 #include <string>
@@ -49,3 +50,5 @@ private:
     // Parses assembly file and builds CFG
     void parseAssembly(std::string filename);
 };
+
+#endif

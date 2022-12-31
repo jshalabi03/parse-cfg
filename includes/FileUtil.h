@@ -1,4 +1,5 @@
-#pragma once
+#ifndef FILEUTIL_H
+#define FILEUTIL_H
 
 #include <string>
 #include <vector>
@@ -25,3 +26,5 @@ std::string getInstruction(std::string line);
 // extracts "LBB2_1" from "	b	LBB2_1"
 // extracts "LBB2_4" from "	cbnz	w8, LBB2_4"
 std::string getJumpDestination(std::string line);
+
+#endif
