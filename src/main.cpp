@@ -9,8 +9,11 @@ int main(int argc, char *argv[]) {
     int option;
     std::string input_path;
     std::string output_path;
-    while ((option = getopt(argc, argv, "f:o:")) != -1) {
+    while ((option = getopt(argc, argv, "hf:o:")) != -1) {
         switch (option) {
+            case 'h':
+                cout << "Usage: " << argv[0] << " -f <input file> -o <output file>" << endl;
+                exit(EXIT_SUCCESS);
             case 'f':
                 input_path = optarg;
                 break;
