@@ -36,8 +36,13 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     }
 
-    CFG cfg("data/index.s");
-    cfg.toDot(output_path);
+    try {
+        CFG cfg("data/index.s");
+        cfg.toDot(output_path);
+    } catch (...) {
+        cerr << "Unknown error occurred." << std::endl;
+    }
+    
 
     return 0;
 }
