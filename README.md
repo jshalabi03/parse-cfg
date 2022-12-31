@@ -5,11 +5,19 @@
 * Docker image fetches required dependencies and ensures standardized output
 * Uses Graphviz to generate PNG visualization of control-flow graph
 
+___
+
+![](https://media.giphy.com/media/Tb2J3IGtk6WSqtwdJi/giphy.gif)
+
+___
+
 ## Usage
 
 > The following instructions may be executed via running the `script.sh` shell script:
 >
 > `$ sh script.sh <path-to-input>`
+>
+> The output will be generated in the `output/` directory
 
 ___
 
