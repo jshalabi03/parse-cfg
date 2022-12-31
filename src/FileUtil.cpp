@@ -18,7 +18,8 @@ bool isComment(std::string line) {
 }
 
 bool isLabel(std::string line) {
-    return line.find(":") != std::string::npos;
+    return line.find(":") == line.size() - 1 
+        || line.find(":") == line.find(" ") - 1;
 }
 
 std::string getLabel(std::string line) {
