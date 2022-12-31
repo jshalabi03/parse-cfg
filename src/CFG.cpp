@@ -1,8 +1,8 @@
-#include "CFG.h"
-#include "FileUtil.h"
-
 #include <fstream>
 #include <iostream>
+
+#include "CFG.h"
+#include "FileUtil.h"
 
 CFG::CFG() {
 }

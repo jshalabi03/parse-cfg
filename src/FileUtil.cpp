@@ -1,7 +1,7 @@
-#include "FileUtil.h"
-
 #include <fstream>
 #include <list>
+
+#include "FileUtil.h"
 
 std::vector<std::string> readLines(std::string filename) {
     std::ifstream file(filename);
